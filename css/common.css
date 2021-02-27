@@ -52,6 +52,8 @@
   --join-text-color: #ffffff;
   --join-icon-color: #ffffff;
   --background-social-link: rgba(255, 255, 255, 0.1);
+  --subscribe-text-color: #ffffff;
+  --subscribe-text-input: rgba(255, 255, 255, 0.6);
 
   /* Modal */
   --backdrop-background: rgba(0, 0, 0, 0.2);
@@ -291,7 +293,7 @@ p {
 }
 
 .footer-address-wrapper {
-  margin-right: 70px;
+  margin-right: 85px;
 }
 
 .main-footer .logo {
@@ -310,6 +312,7 @@ p {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 
   color: var(--office-address-color);
 }
@@ -336,6 +339,7 @@ p {
 }
 
 .footer-join-wrapper {
+  margin-right: 93px;
 }
 
 .join-text {
@@ -381,5 +385,57 @@ p {
 }
 
 .social-icon {
+  fill: currentColor;
+}
+
+.footer-subscribe-form {
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-input-contaner {
+  margin-right: 12px;
+}
+
+.footer-subscribe-label {
+  display: block;
+  margin-right: 12px;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--subscribe-text-color);
+}
+
+.subscribe-input {
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  background-color: transparent;
+  color: var(--subscribe-text-input);
+}
+
+.footer-subscribe-btn {
+  display: inline-flex;
+  padding: 10px 28px;
+  align-items: center;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.subscribe-icon {
+  margin-left: 10px;
+
   fill: currentColor;
 }
